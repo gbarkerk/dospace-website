@@ -1,0 +1,82 @@
+<div id="portfolioSheetWrapper">
+
+    <header id="project">
+        <div class="container">
+            <div class="row">
+               
+                <div class="col-md-2">
+                    <a href="javascript:$.pageslide.close()" class="btn pull-right"><i class="icon-cancel-outline"></i>Close</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main content -->
+    <section class="content">
+        <div class="container">
+            <section class="row">
+                <div class="col-md-12">
+                    <div class="jumbotron">
+                        <div class="container" center>
+                            <h2>Take a tour through our barge</h2>
+                            <p><span style="font-family: arial, helvetica, sans-serif; font-size: small;">If you like what you see why not stop in and see the real thing. Contact us at the details below to set up an appointment</span></p>
+                            
+<iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sie!4v1432509338298!6m8!1m7!1s6e_GpEq-HNIAAAQfDTR2gw!2m2!1d53.34193!2d-6.238474!3f81.09314787404003!4f-27.397332879157595!5f0.7820865974627469" width="800" height="600" frameborder="0" style="border:0"></iframe>                            
+                            <p><span style="font-family: arial, helvetica, sans-serif; font-size: small;">Please contact&nbsp;<strong>Graham</strong>, DoSpace Dublins&nbsp;<strong>Community Manager</strong>&nbsp;to apply for space in DoSpace Dublin.&nbsp;</br>
+<Graham from DoSpace can be contacted at;</br>
+<strong>Mobil:&nbsp;</strong>087 974 2629<br />
+<strong>Email:&nbsp;</strong>Graham@DoSpace.ie<br />
+<strong>Twitter:</strong>&nbsp;@DoSpaceIRL<br />
+<strong>Website Chat:</strong>&nbsp;www.DoSpace.ie</span></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+            <div class="col-md-2 col-md-offset-5">
+                <a href="javascript:$.pageslide.close()" class="btn"><i class="icon-cancel-outline"></i>Close</a>
+
+            </div>
+        </div>
+            </section>
+<!-- end main content -->
+</div>
+
+<script type="text/javascript">
+$(function () {
+
+
+    $('#bTab a').click(function (e) {
+        $(this).tab('show');
+        e.preventDefault();
+    });
+
+    $('.dropdown-toggle').dropdown();
+
+    $('.dropdown-menu a').click(function (e) {
+        $('li.active').removeClass('open');
+        e.preventDefault();
+    });
+
+
+    $(".accordion-toggle").click(function (e) {
+        var $target = $(this).parent().parent().parent().find('.panel-collapse');
+
+        if($target.hasClass('in')){
+            $target.collapse('hide'); 
+        }else{
+            $('.panel-collapse.in').collapse('hide');
+            $target.collapse('show');
+        }
+        e.preventDefault();
+    });
+
+    $('.close').click(function (e) {
+        $(this).parent('.alert').alert('close');
+        e.preventDefault();
+    });
+
+});  
+
+
+</script>

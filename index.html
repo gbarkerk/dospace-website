@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+		<meta charset="utf-8">
+		<title>DoSpace</title>
+		<meta name="description" content="DoSpace is a network of Co-Working spaces in Ireland">
+		<meta name="author" content="DoSpace">
+		<meta property="og:image" content="http://dospace.ie/images/facebook-logo2.png" />
+		<!-- Mobile Specific Metas
+		================================================== -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<!-- CSS
+		================================================== -->
+		<!-- Bootstrap  -->
+		<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<!-- web font  -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet" type="text/css">
+		<!-- plugin css  -->
+		<link rel="stylesheet" type="text/css" href="js-plugin/animation-framework/animate.css" />
+		<link rel="stylesheet" type="text/css" href="js-plugin/magnific-popup/magnific-popup.css" />
+		<link type="text/css" rel="stylesheet" href="js-plugin/isotope/css/style.css">
+		<link rel="stylesheet" type="text/css" href="js-plugin/flexslider/flexslider.css" />
+		<link rel="stylesheet" type="text/css" href="js-plugin/pageSlide/jquery.pageslide.css" />
+		<!-- Owl carousel-->
+		<link rel="stylesheet" href="js-plugin/owl.carousel/owl-carousel/owl.carousel.css">
+		<link rel="stylesheet" href="js-plugin/owl.carousel/owl-carousel/owl.theme.css">
+		<link rel="stylesheet" href="js-plugin/owl.carousel/owl-carousel/owl.transitions.css">
+		<!-- icon fonts -->
+		<link type="text/css" rel="stylesheet" href="font-icons/custom-icons/css/custom-icons.css">
+		<link type="text/css" rel="stylesheet" href="font-icons/custom-icons/css/custom-icons-ie7.css">
+		<link type="text/css" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<!-- Custom css -->
+		<link type="text/css" rel="stylesheet" href="css/layout.css">
+		<link type="text/css" id="colors" rel="stylesheet" href="css/orange.css">
+		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+		<script src="js/modernizr-2.6.1.min.js"></script>
+		<!-- Favicons
+		================================================== -->
+		<link rel="shortcut icon" href="images/favicon.ico?">
+		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+		
+		
+		<script type="text/javascript" src="js-plugin/jquery/jquery.1.10.2.min.js"></script>
+		
+				<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+		<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+		
+		<style type="text/css" media="screen">
+			* { margin: 0; padding: 0; }
+			ul lil { display: inline; }
+			</style>
+	
+		<!--Chat of Tawk.to Script-->
+		<script type="text/javascript">
+		var $_Tawk_API={},$_Tawk_LoadStart=new Date();
+		(function(){
+		var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+		s1.async=true;
+		s1.src='https://embed.tawk.to/550a139e059b265f5424ac23/default';
+		s1.charset='UTF-8';
+		s1.setAttribute('crossorigin','*');
+		s0.parentNode.insertBefore(s1,s0);
+		})();
+		</script>
+		<!--End of Tawk.to Script-->
+		<!--End Chat-->
+		<script type="text/javascript">
+		$('#contactfrm').on('submit', function() {
+		$('#addListItem').modal('hide');
+		});
+		</script>
+		
+		<!-- Google Analytics Code -->
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');	      
+		ga('create', 'UA-61538511-1', 'auto');
+		ga('send', 'pageview');
+  	    </script>
+</head>
+	
+<body data-spy="scroll" data-target="#scrollTarget" data-offset="150" id="fullScreen">
+		
+		<!--image header stuff-->
+			<div style="position:absolute; top: 20px; left: 20px; z-index: 1000;">
+			<a href="index.html"><img src="images/main-logo.png" alt="DoSpace Coworking"/></a> </div>
+			</div>
+		
+			<div style="position:absolute; top: 30px; right: 30px; z-index: 1000;">
+			<a href="https://members.dospace.ie"><i class="fa fa-sign-in"></i>Login</a>
+			</div>
+		
+		<!-- Preloader -->
+		<div id="preloader">
+			<div id="status">
+				<img src="images/theme-pics/loader.gif" alt=""/><h1 class="noSubtitle">DoSpace</h1>
+			</div>
+		</div>
+		<!-- Preloader -->
+		<!-- globalWrapper -->
+	
+		<div id="globalWrapper" class="localscroll">
+			
+			
+			<!-- header -->
+			<header id="mainHeader" class="navbar-fixed-top" role="banner">
+				<div class="container">
+					
+					
+					<nav class="navbar navbar-default scrollMenu" role="navigation">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+							<a class="navbar-brand" href="index.html"><img src="images/main-logo.png" alt="DoSpace Coworking"/></a> </div>
+							<div class="collapse navbar-collapse navbar-ex1-collapse" id="scrollTarget">
+								<ul class="nav navbar-nav pull-right">
+									<li class="active"><a href="#homeFullScreen"><i class="icon-home-outline"></i>Home</a> </li>
+									<li><a href="#about"><i class="fa fa-users"></i>Membership</a> </li>
+									<li><a href="#services"><i class="fa fa-ship"></i>Location</a> </li>
+									<li><a href="faq.html" class="alert-link portfolioSheet"><i class="fa fa-question"></i>FAQ's</a> </li>
+									<li><a href="https://members.dospace.ie"><i class="fa fa-sign-in"></i>Login</a> </li>
+								</ul>
+							</div>
+
+					</nav>
+					</div>
+				</header>
+				<!-- header -->
+				<!-- Modal -->
+                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                  <div class="modal-dialog">
+                                    <div class="modal-content">
+									
+					<div class="modal-header">
+					<h2 class="modal-title text-center">Become a Member</h2>
+					</div>
+                                        <div class="modal-body">
+						<form method="post" action="js-plugin/neko-contact-ajax-plugin/php/form-handler.php" id="contactfrm" role="form">
+							<div class="col-sm-6"> 
+								<div class="form-group">
+									<input type="text" class="form-control" name="name" id="name" placeholder="Enter name"  title="Please enter your name (at least 2 characters)"/>
+								</div>
+								<div class="form-group">
+									<input type="email" class="form-control" name="email" id="email" placeholder="Enter email" title="Please enter a valid email address"/>
+								</div>
+								<div class="form-group">
+									<input name="phone" class="form-control required digits" type="tel" id="phone" size="30" value="" placeholder="Enter phone number" title="Please enter a valid phone number (at least 10 characters)">
+								</div>
+								<div class="form-group">
+									<textarea name="comment" class="form-control" id="comments" cols="3" rows="5" placeholder="Requirements i.e. Two employees working for sample company require two semi private desks or full company of three looking for private office etc." title="Please enter your requirements (at least 10 characters)"></textarea>
+								</div>
+							</div>
+							<div class="col-sm-6"> 
+								Send us your details and requirements and our community manager will
+								contact you shortly. If you have any questions feel free to ask a member
+								of our team via our live chat or call us at 087 974 2629.
+							</div>
+							<div class="col-md-8">
+								<div class="result"></div>
+							</div>
+							
+							<div class="text-center col-xs-12">
+								<button name="submit" type="submit" class="btn btn-sm" id="submit"> Submit</button>
+								<button name="close" type="Close" class="btn btn-sm" data-dismiss="modal" id="close"> Close</button>
+						</div>
+						</form>
+                                        </div>
+										
+                                        <div class="modal-footer">
+						
+                                      </div>
+                                    </div><!-- /.modal-content -->
+                                  </div><!-- /.modal-dialog -->
+                                </div>
+				
+				 
+                                <!-- /.modal -->                 
+				
+				<!-- content -->
+				<section id="homeFullScreen" data-stellar-background-ratio="0.5">
+					<div class="maskParent" >
+						<!--Image sourced from http://myworldmycamera.com/-->
+						<div class="paralaxMask"></div>
+						<div id="fullScreenSliderWrapper">
+							<div>
+							<!--<img class="img-responsive" src="images/main-logo.png" alt="DoSpace CoWorking" />-->
+							</div>
+
+							<div class="flexslider" id="flexHome">
+								<ul class="slides">
+									<li>
+										<h1>A Shared Community</h1>							
+									</li>
+									<li>
+										<h1>Amazing Perks</h1>
+									</li>
+									<li>
+										<h1>Flexible Terms</h1>
+									</li>
+								
+								</ul>
+							</div>
+							
+							<a href="#myModal" data-toggle="modal" data-target="#myModal" class="homeBtn btn">Become a Member</a>                                                                       
+							</div>
+			</div>
+		
+					</div>
+				</section>
+				
+			</div>
+		<!--Membership information-->
+			<section class="pricing slice " id="about">
+				<div class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<h1>Membership</h1>
+								<h2 class="subTitle">Be a part of our floating co-working community on Grand Canal Dock, Dublin 2</h2>
+							</div>
+						</div>						
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<div class="pricingBloc focusPlan">
+									<h2>Casual</h2>
+									<h3>€100<span>per month</span></h3>
+									<ul>
+										<li>For the work from home, need an office/meeting room occasionally worker. Perfect with our 'Business Address' add-on.
+										</li>
+										<li>1 Day a week at a dedicated desk*</li>
+										<li>1 hour-standard meeting room**</li>
+										<li>Business Address Option</li>
+										<li>Access to the DoSpace network and networking events</li>
+										<li>Access to the ManageMySpace™ App</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="pricingBloc focusPlan">
+									<h2>Home Maker</h2>
+									<h3>€350<span>per month</span></h3>
+									<ul>
+										<li>For the business that needs a full time office and everything that goes with one, but not the commitment. Includes 'Business Address' add-on.
+									</li>
+										<li>Dedicated desk space</li>
+										<li>5 hours-standard meeting room**</li>
+										<li>Business Address Add-on</li>
+										<li>Access to the DoSpace network and networking events</li>
+										<li>Access to the ManageMySpace™ App</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="pricingBloc focusPlan">
+									<h2>Office</h2>
+									<h3>€2000<span>per month</span></h3>
+									<ul>
+										<li>We are currently launching individual offices. For companies that would like to be part of the community but also to close your door from time to time.
+										<li>Dedicated office</li>
+										<li>9 hours-standard meeting room**</li>
+										<li>Business address add-on</li>
+										<li>Access to the DoSpace network and networking events</li>
+										<li>Access to the ManageMySpace™ App</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="pricingBloc focusPlan">
+									<h2>Social</h2>
+									<h3>FREE<span>per agreement</span></h3>
+									<ul>
+										<li>We give away 10% of our resources free to worthwhile social enterprises that fit the spirit of our community. If this is you, get in touch!</li>
+										<li>4 days workspace</li>
+										<li>2 hours-standard meeting room</li>
+										<li>Use of laptop, storage, VOIP</li>
+										<li>Access to the DoSpace network and networking events</li>
+										<li>Access to the ManageMySpace™ App</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<br/>
+						*Additional on demand days at €30 per day</br>
+						**Additional on demand hours at €25 per hour</br>
+						Prices Ex VAT.
+					</div>
+				</section>
+
+				<!-- Information about the barge -->
+				<section class="slice noPaddingBottom" id="services">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<h1>The Barge</h1>
+								<h2 class="subTitle">That is right! Our co-working community is based on a river barge!</h2>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-4"> <img src="images/theme-pics/barge.png" alt="The Barge" class="img-responsive"> </div>
+							<div class="col-sm-4">
+								<h2>The "Grey Owl"</h2>
+
+								<p>One of the premier barges of the Irish Waterways the "Grey Owl" is a dry open plan space; ideal for community interaction or quiet solo work.
+								</p>
+								<p>800 Square feet of centrally heated workspace, the barge is always at the perfect temperature.  Internet and power points available throughout. It even has a beer tap!
+								</p>
+								</br>
+							</div>
+
+							<div class="col-sm-4">
+								<h2>History</h2>
+								<p>Following recent conversion, the "Grey Owl" moved to Dublin and is now located on the Grand Canal Dock Marina.
+								</p>
+								<p>The Grey Owl was custom Built in 2008 by Bluewater boats, UK as a luxury boatel, prior to conversion to Ireland's first floating co-working space.
+								</p>
+								</br>
+							</div>
+							
+							<div class="col-sm-8">
+								<div class="alert alert-info alert-dismissable text-center" >
+							<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+							<a href="tour.html" class="alert-link portfolioSheet">Click here for an interactive tour of the barge</a>
+						</div>
+							</div>
+							
+							
+						</div>
+						
+					</div>
+				</section>
+				
+				<!--photo gallery-->
+				<section class="slice" id="gallery">
+						<div class="col-xs-12 text-center">
+			<ul class="gallery clearfix">
+				<lil><a href="images/fullscreen/1.jpg" rel="prettyPhoto[gallery1]" title="The Alto Vetro building through our skylight"><img src="images/thumbnails/t_1.jpg" width="60" height="60" alt="" /></a></lil>
+				<lil><a href="images/fullscreen/2.jpg" rel="prettyPhoto[gallery1]" title="Drop-in hotdesk space, a lovely place to work in the evening"><img src="images/thumbnails/t_2.jpg" width="60" height="60" alt="" /></a></lil>
+				<lil><a href="images/fullscreen/3.jpg" rel="prettyPhoto[gallery1]" title="The neighbours"><img src="images/thumbnails/t_3.jpg" width="60" height="60" alt="" /></a></lil>
+				<lil><a href="images/fullscreen/4.jpg" rel="prettyPhoto[gallery1]" title="Meeting room schedular (meeting rooms can also be schedualed via our custom made app or web tool)"><img src="images/thumbnails/t_4.jpg" width="60" height="60" alt="" /></a></lil>
+				<lil><a href="images/fullscreen/5.jpg" rel="prettyPhoto[gallery1]" title="Trinity’s Technology and Enterprise campus - The Tower."><img src="images/thumbnails/t_5.jpg" width="60" height="60" alt="" /></a></lil>
+				<lil><a href="images/fullscreen/8.jpg" rel="prettyPhoto[gallery1]" title="Bolands Mill from the conference room."><img src="images/thumbnails/t_8.jpg" width="60" height="60" alt="" /></a></lil>
+				<lil><a href="images/fullscreen/9.jpg" rel="prettyPhoto[gallery1]" title="Bolands Mill from the conference room."><img src="images/thumbnails/t_9.jpg" width="60" height="60" alt="" /></a></lil>
+				<lil><a href="images/fullscreen/10.jpg" rel="prettyPhoto[gallery1]" title="The office in the evening sun."><img src="images/thumbnails/t_10.jpg" width="60" height="60" alt="" /></a></lil>
+				<lil><a href="images/fullscreen/12.jpg" rel="prettyPhoto[gallery1]" title="The deck."><img src="images/thumbnails/t_12.jpg" width="60" height="60" alt="" /></a></lil>
+				<lil><a href="images/fullscreen/13.jpg" rel="prettyPhoto[gallery1]" title="The deck."><img src="images/thumbnails/t_13.jpg" width="60" height="60" alt="" /></a></lil>
+				<lil><a href="images/fullscreen/14.jpg" rel="prettyPhoto[gallery1]" title="Our Budda."><img src="images/thumbnails/t_14.jpg" width="60" height="60" alt="" /></a></lil>
+				<lil><a href="images/fullscreen/15.jpg" rel="prettyPhoto[gallery1]" title="The office."><img src="images/thumbnails/t_15.jpg" width="60" height="60" alt="" /></a></lil>
+				<lil><a href="images/fullscreen/16.jpg" rel="prettyPhoto[gallery1]" title="During those winter months a nice fire creates a good thinking athmosphere."><img src="images/thumbnails/t_16.jpg" width="60" height="60" alt="" /></a></lil>
+				<lil><a href="images/fullscreen/17.jpg" rel="prettyPhoto[gallery1]" title="Trinity’s Technology and Enterprise campus - The Tower."><img src="images/thumbnails/t_17.jpg" width="60" height="60" alt="" /></a></lil>
+				<lil><a href="images/fullscreen/18.jpg" rel="prettyPhoto[gallery1]" title="Beer on tap!"><img src="images/thumbnails/t_18.jpg" width="60" height="60" alt="" /></a></lil>
+				<lil><a href="images/fullscreen/19.jpg" rel="prettyPhoto[gallery1]" title="Our coffee machine"><img src="images/thumbnails/t_19.jpg" width="60" height="60" alt="" /></a></lil>
+				<lil><a href="images/fullscreen/20.jpg" rel="prettyPhoto[gallery1]" title="Our drop in hot desk."><img src="images/thumbnails/t_20.jpg" width="60" height="60" alt="" /></a></lil>
+			</ul>
+			<br/><br/>
+			
+			<script type="text/javascript" charset="utf-8">
+			$(document).ready(function(){
+				$("area[rel^='prettyPhoto']").prettyPhoto();			
+				$(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: false});
+			});
+			</script>			
+		</div>
+				</section>				
+				
+				<section class="slice noPaddingBottom" id="works">
+					<div class="container clearfix">
+					
+						<div class="portfolio-items  isotopeWrapper clearfix imgHover row" id="3">
+							
+							<article class="col-sm-4 isotopeItem cats">
+								<section class="imgWrapper"> 
+									<img alt="" src="images/portfolio/home_page_highlights_deskspace.jpg" class="img-responsive">
+								</section>
+								<div class="mediaHover">
+									<div class="mask"></div>
+									<div class="iconLinks">
+									
+										<a href="images/portfolio/home_page_highlights_deskspace.jpg" class="image-link" title="Gallery Popup" >
+											<i class="icon-search iconRounded iconBig"></i>
+											<span>zoom</span>
+										</a>
+									</div>
+								</div>
+								<section class="boxContent">
+									<h3>Workstations</h3>
+									<p>Individual standard work-stations are 1,200mm x 600mm in size, and include two power-points, desk light and executive chair.  Each work space is located next to a window with an amazeing view of the Dock, giving a bright and airy feel.  Options include LAN connections, storage units, LED monitors, Cisco IP handsets, whiteboard, larger desks.<br>
+									</p>
+								</section>
+							</article>
+							<article class="col-sm-4 isotopeItem cats">
+								<section class="imgWrapper"> 
+									<img alt="" src="images/portfolio/home_page_highlights_thecube.jpg" class="img-responsive"> 
+								</section>
+								<div class="mediaHover">
+									<div class="mask"></div>
+									<div class="iconLinks">
+									
+										<a href="images/portfolio/home_page_highlights_thecube.jpg" class="image-link" title="Gallery Popup" >
+											<i class="icon-search iconRounded iconBig"></i>
+											<span>zoom</span>
+										</a>
+									</div>
+								</div>
+								<section class="boxContent">
+									<h3>The Cube Conference Room</h3>
+									<p>Metres from the barge is the iconic Irish Waterways Cube Building containing our formal meeting and conference room.  Guaranteed to impress your customers and investors with seating for up to 12.  Equipped with HD projector, screen, Chromecast connectivity and surround sound.  It can be booked via the DoSpace application. Additional catering can be supplied.<br>
+										
+									</p>
+								</section>
+							</article>
+
+							<article class="col-sm-4 isotopeItem women">
+								<section class="imgWrapper"> 
+									<img alt="" src="images/portfolio/home_page_highlights_meetingroom.jpg" class="img-responsive"> 
+								</section>
+								<div class="mediaHover">
+									<div class="mask"></div>
+									<div class="iconLinks">
+									
+										<a href="images/portfolio/home_page_highlights_meetingroom.jpg" class="image-link" title="Zoom">
+											<i class="icon-search iconRounded iconBig"></i>
+											<span>zoom</span>
+										</a>
+									</div>
+								</div>
+								<section class="boxContent">
+									<h3>The Wheelhouse Conference Room</h3>
+									<p>Our informal meeting room, cleverly called "The Wheelhouse" as it is the boat's actual wheelhouse is located on the upper deck. With seating for up to eight it is bookable via the DoSpace application. Although equipped with a 37inch HD screen, Chromecast connectivity, surround sound, it's most noticeable feature is a full 360 degree view of Grand Canal Dock.<br>
+										
+									</p>
+								</section>
+							</article>
+
+
+							<article class="col-sm-4 isotopeItem graphics">
+								<section class="imgWrapper"> 
+									<img alt="" src="images/portfolio/home_page_highlights_kitchen.jpg" class="img-responsive"> 
+								</section>
+								<div class="mediaHover">
+									<div class="mask"></div>
+									<div class="iconLinks">
+										
+										<a href="images/portfolio/home_page_highlights_kitchen.jpg" class="image-link" title="Zoom" >
+											<i class="icon-search iconRounded iconBig"></i>
+											<span>zoom</span>
+										</a>
+									</div>
+								</div>
+								
+								<section class="boxContent">
+									<h3>Other Perks</h3>
+									<p>On board we have a canteen with free coffee, tea and soft drinks, a seating/breakout area, a private phone booth and whiteboards. With direct access to legal, accounting and marketing experts we can link you in to whomever you need. Printing and copying are included in each membership.<br>
+										
+									</p>
+								</section>
+							</article>
+							
+							<article class="col-sm-4 isotopeItem women">
+								<section class="imgWrapper"> 
+									<img alt="" src="images/portfolio/home_page_highlights_community.jpg" class="img-responsive"> 
+								</section>
+								<div class="mediaHover">
+									<div class="mask"></div>
+									<div class="iconLinks">
+										
+										<a href="images/portfolio/home_page_highlights_community.jpg" class="image-link" title="Zoom" >
+											<i class="icon-search iconRounded iconBig"></i>
+											<span>zoom</span>
+										</a>
+									</div>
+								</div>
+								<section class="boxContent">
+									<h3>The DoSpace Community</h3>
+									<p>Our community is the hub of our co-working space. Lunch, chat, attend networking events and share knowledge with your fellow members. "The Christmas Run", one of our networking program highlights invites all DoSpace members to host their Christmas parties on board up the river!<br>
+										
+									</p>
+								</section>
+							</article>
+
+							<article class="col-sm-4 isotopeItem graphics">
+								<section class="imgWrapper"> 
+									<img alt="" src="images/portfolio/home_page_highlights_dospaceapp.jpg" class="img-responsive"> 
+								</section>
+								<div class="mediaHover">
+									<div class="mask"></div>
+									<div class="iconLinks">
+										<a href="images/portfolio/home_page_highlights_dospaceapp.jpg" class="image-link" title="Zoom">
+											<i class="icon-search iconRounded iconBig"></i>
+											<span>zoom</span>
+										</a>
+									</div>
+								</div>
+								<section class="boxContent">
+									<h3>ManageMySpace™ App</h3>
+									<p>ManageMySpace™ App is an app designed and developed by DoSpace to make every members life easy. Via the ManageMySpace™ App you can book conference rooms, extend/shorten your contract, communicate with everybody else in the DoSpace community and even use it to gain keyless access to DoSpace spaces.<br>
+									</p>
+								</section>
+							</article>
+						</div>
+						</div>
+					</div>
+				</section>
+				
+				<!-- Q&A-->
+				<section class="slice noPaddingBottom" id="faq">
+					<div class="container">
+					<div class="col-xs-12 mt30">
+						<div class="alert alert-info alert-dismissable text-center" >
+							<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+							<a href="faq.html" class="alert-link portfolioSheet">Click here for the answers to frequently asked questions</a>
+						</div>
+					</div>
+					</div>
+				</section>				
+				<!--our partners-->
+				<section class="slice" id="perks">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 text-center">
+							<h1>PERKS</h1>
+							<h2 class="subTitle">DoSpace members have access to many extra benefits provided by;</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 text-center">
+							<i><img src="images/partners/GoCarLogo.png" alt="Gocar"></i>
+							<i><img src="images/partners/layaHealthcareLogo.png" alt="Laya Healthcare"></i>
+							<i><img src="images/partners/vodafoneLogo.png" alt="Vodafone"></i>
+							<i><img src="images/partners/flyeFitLogo.png" alt="Flyefit Gyms"></i>
+							<i><img src="images/partners/hiltonLogo.png" alt="Laya Healthcare"></i>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- content -->
+
+				<!-- footer -->
+				<footer class="color4 ">
+					<section id="mainFooter">
+						<div class="container" id="footer">
+							<div class="row">
+									<div class="footerWidget text-center col-xs-12">
+										
+										
+										
+										
+										<form action="https://dosapce.createsend.com/t/i/s/jrekh/" method="post" id="subForm">
+											
+											<p>Interested in hearing more about DoSpace Coworking?	
+											<input id="fieldEmail" name="cm-jrekh-jrekh" type="email" style="color: #e4a539;" placeholder="Enter your email" required/>
+											</p>  <p>
+											Let us know and receive 10% off one months membership 	
+											
+											<button type="submit" class="btn btn-xs" >I'm interested</button>
+											</p>
+										</form>
+										
+										<ul class="socialNetwork mt15">
+												<li><a href="https://www.facebook.com/pages/DoSpace/888111637891168?ref=tn_tnmn" class="tips" title="" data-original-title="follow DoSpace on Facebook"><i class="icon-facebook-1 iconRounded"></i></a></li>
+												<li><a href="https://twitter.com/DoSpaceIRL" class="tips" title="" data-original-title="follow DoSpace on Twitter"><i class="icon-twitter-bird iconRounded"></i></a></li>
+												<li><a href="https://plus.google.com/u/0/b/104140547700504644269/104140547700504644269/" class="tips" title="" data-original-title="follow DoSpace on Google+"><i class="icon-gplus-1 iconRounded"></i></a></li>
+												<li><a href="#" class="tips" title="" data-original-title="follow DoSpace on Linkedin"><i class="icon-linkedin-1 iconRounded"></i></a></li>
+											</ul>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</footer>
+				<!-- End footer -->
+			<!-- global wrapper -->
+		<!-- End Document 
+		================================================== -->
+		<script type="text/javascript" src="js-plugin/respond/respond.min.js"></script>
+		<script type="text/javascript" src="js-plugin/jquery-ui/jquery-ui-1.8.23.custom.min.js"></script>
+		<!-- third party plugins  -->
+		<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript" src="js-plugin/easing/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js-plugin/flexslider/jquery.flexslider-min.js"></script>
+
+
+		<script type="text/javascript" src="js-plugin/isotope/jquery.isotope.min.js"></script>
+		<script type="text/javascript" src="js-plugin/isotope/jquery.isotope.sloppy-masonry.min.js"></script>
+		<script type="text/javascript" src="js-plugin/neko-contact-ajax-plugin/js/jquery.form.js"></script>
+		<script type="text/javascript" src="js-plugin/neko-contact-ajax-plugin/js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js-plugin/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="js-plugin/parallax/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+		<script type="text/javascript" src="js-plugin/parallax/js/jquery.localscroll-1.2.7-min.js"></script>
+		<script type="text/javascript" src="js-plugin/parallax/js/jquery.stellar.min.js"></script>
+		<script type="text/javascript" src="js-plugin/pageSlide/jquery.pageslide-custom.js"></script>
+		<script type="text/javascript" src="js-plugin/jquery.sharrre-1.3.4/jquery.sharrre-1.3.4.min.js"></script>
+
+		<script type="text/javascript" src="js-plugin/owl.carousel/owl-carousel/owl.carousel.min-MODIFIED.js"></script>
+
+
+		<!-- Custom  -->
+		<script type="text/javascript" src="js/custom.js"></script>
+	</body>
+	</html>
